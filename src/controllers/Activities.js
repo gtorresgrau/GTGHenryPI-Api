@@ -1,4 +1,4 @@
-import { Country, Activity } from '../db.js';
+const { Country, Activity } = require ('../db.js');
 
 
 const postActivity = async (req, res) => {

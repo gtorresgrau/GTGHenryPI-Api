@@ -1,4 +1,4 @@
-import { Country, Activity } from '../db.js';
+const { Country, Activity } = require ('../db.js');
 const { Op } = require( 'sequelize');
 
 const getById = async (req,res) => {
