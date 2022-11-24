@@ -3,7 +3,7 @@ const { countries } = require('../controllers/Countries.js');
 const { getContinents } = require('../controllers/Continents.js');
 const { getById } = require('../controllers/CountriesById.js');
 const { postActivity } = require('../controllers/Activities.js');
-const { getActivities } = require('../controllers/getActivities.js');
+const { getActivities } = require('../controllers/GetActivities.js');
 
 
 // Importar todos los routers;
