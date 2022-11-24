@@ -1,5 +1,5 @@
-import { Country, Activity } from '../db.js';
-import { Op } from 'sequelize';
+const { Country, Activity } =requiere ( '../db.js');
+const { Op } =requiere ( 'sequelize');
 
 const getContinents = async (req, res) => {
     const { continent } = req.params;
@@ -23,6 +23,4 @@ const getContinents = async (req, res) => {
     }
 }
   
-  export default{
-    getContinents
-};
+export default { getContinents};

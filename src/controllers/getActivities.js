@@ -1,5 +1,4 @@
-import { Activity } from '../db.js';
-import { Op } from 'sequelize';
+const { Activity } =requiere( '../db.js');
 
 
 const getActivities = async (req,res) => {

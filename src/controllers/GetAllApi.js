@@ -1,5 +1,5 @@
-import { get } from 'axios';
-import { Country, Activity } from '../db.js';
+const { get } =requiere ( 'axios');
+const { Country, Activity } =requiere ( '../db.js');
 
 
 const getAllApi = async () => {
@@ -31,4 +31,4 @@ const getAllApi = async () => {
     }
 };
 
-export default{ getAllApi };
+export default { getAllApi };

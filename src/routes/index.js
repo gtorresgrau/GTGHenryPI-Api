@@ -1,9 +1,9 @@
-import Router  from 'express';
-import countries from '../controllers/Countries.js';
-import getContinents from '../controllers/Continents.js';
-import getById from '../controllers/CountriesById.js';
-import postActivity from '../controllers/Activities.js';
-import getActivities from '../controllers/GetActivities.js';
+const {Router}  = requier( 'express');
+const {countries} = requier( '../controllers/Countries.js');
+const {getContinents} = requier( '../controllers/Continents.js');
+const {getById} = requier( '../controllers/CountriesById.js');
+const {postActivity} = requier( '../controllers/Activities.js');
+const {getActivities} = requier( '../controllers/GetActivities.js');
 
 
 // Importar todos los routers;

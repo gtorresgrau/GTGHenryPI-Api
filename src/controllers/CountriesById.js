@@ -1,5 +1,5 @@
-import { Country, Activity } from '../db.js';
-import { Op } from 'sequelize';
+const { Country, Activity } =requiere( '../db.js');
+const { Op } =requiere( 'sequelize');
 
 const getById = async (req,res) => {
     let {id} = req.params;
@@ -24,6 +24,4 @@ const getById = async (req,res) => {
     }
 };
 
-export default{
-    getById
-};
+export default { getById };

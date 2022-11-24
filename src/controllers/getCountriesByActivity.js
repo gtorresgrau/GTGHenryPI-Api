@@ -1,5 +1,5 @@
-import { Country, Activity } from '../db.js';
-import { Op } from 'sequelize';
+const { Country, Activity } = requiere ('../db.js');
+const { Op } = requiere ('sequelize');
 
 
 const getCountriesByActivity = async (req, res) => {
@@ -24,6 +24,4 @@ const getCountriesByActivity = async (req, res) => {
     }
 }
   
-  export default{
-    getCountriesByActivity
-};
+export default { getCountriesByActivity };
