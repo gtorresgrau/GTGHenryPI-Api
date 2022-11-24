@@ -16,4 +16,4 @@ const getActivities = async (req,res) => {
     }
 };
 
-export default {getActivities}
+module.exports={getActivities}

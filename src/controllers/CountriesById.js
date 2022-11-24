@@ -24,4 +24,4 @@ const getById = async (req,res) => {
     }
 };
 
-export default { getById };
+module.exports={ getById };

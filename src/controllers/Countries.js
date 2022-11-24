@@ -28,6 +28,4 @@ const countries = async(req, res)=>{
 
 };
 
-export default { 
-    countries
- };
+module.exports={ countries};

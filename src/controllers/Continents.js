@@ -23,4 +23,4 @@ const getContinents = async (req, res) => {
     }
 }
   
-export default { getContinents};
+module.exports={ getContinents};

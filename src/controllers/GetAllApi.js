@@ -31,4 +31,4 @@ const getAllApi = async () => {
     }
 };
 
-export default { getAllApi };
+module.exports={ getAllApi };

@@ -33,4 +33,4 @@ const postActivity = async (req, res) => {
     }
 };
 
-export default { postActivity};
+module.exports= { postActivity};
