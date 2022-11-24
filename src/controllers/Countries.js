@@ -1,5 +1,5 @@
-const {Country, Activity} = require('../db.js');
-const {Op} = require('sequelize')
+import { Country, Activity } from '../db.js';
+import { Op } from 'sequelize';
 
 const countries = async(req, res)=>{
     let {name} = req.query;
@@ -28,6 +28,6 @@ const countries = async(req, res)=>{
 
 };
 
-module.exports = { 
+export default { 
     countries
  };

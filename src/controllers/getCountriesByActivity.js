@@ -1,5 +1,5 @@
-const {Country, Activity} = require('../db.js');
-const {Op} = require('sequelize')
+import { Country, Activity } from '../db.js';
+import { Op } from 'sequelize';
 
 
 const getCountriesByActivity = async (req, res) => {
@@ -24,6 +24,6 @@ const getCountriesByActivity = async (req, res) => {
     }
 }
   
-  module.exports={
+  export default{
     getCountriesByActivity
 };

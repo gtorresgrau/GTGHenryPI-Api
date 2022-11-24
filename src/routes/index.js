@@ -1,9 +1,9 @@
-const { Router } = require('express');
-const { countries } = require('../controllers/Countries.js');
-const { getContinents } = require('../controllers/Continents.js');
-const { getById } = require('../controllers/CountriesById.js');
-const { postActivity } = require('../controllers/Activities.js');
-const { getActivities } = require('../controllers/GetActivities.js');
+import Router  from 'express';
+import countries from '../controllers/Countries.js';
+import getContinents from '../controllers/Continents.js';
+import getById from '../controllers/CountriesById.js';
+import postActivity from '../controllers/Activities.js';
+import getActivities from '../controllers/GetActivities.js';
 
 
 // Importar todos los routers;

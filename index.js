@@ -17,9 +17,9 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
+import server from './src/app.js';
 const { conn } = require('./src/db.js');
-const { getAllApi } = require('./src/controllers/GetAllApi.js')
+const { getAllApi } = require('./src/controllers/GetAllApi.js').default
 const {PORT} = process.env;
 // Syncing all the models at once.
 

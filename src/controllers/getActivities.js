@@ -1,5 +1,5 @@
-const { Activity } = require('../db.js');
-const {Op} = require('sequelize')
+import { Activity } from '../db.js';
+import { Op } from 'sequelize';
 
 
 const getActivities = async (req,res) => {
@@ -17,4 +17,4 @@ const getActivities = async (req,res) => {
     }
 };
 
-module.exports = {getActivities}
+export default {getActivities}

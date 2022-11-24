@@ -1,4 +1,4 @@
-const {Country, Activity} = require("../db.js");
+import { Country, Activity } from "../db.js";
 
 
 const postActivity = async (req, res) => {
@@ -33,6 +33,6 @@ const postActivity = async (req, res) => {
     }
 };
 
-module.exports ={
+export default{
     postActivity
 };
