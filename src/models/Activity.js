@@ -1,6 +1,6 @@
 const { DataTypes } = require ('sequelize');
 
-const Activity = (sequelize)=>{
+export default function(sequelize){
   sequelize.define('Activity', {
     name: {
       type: DataTypes.STRING,
@@ -34,5 +34,3 @@ const Activity = (sequelize)=>{
   }
   );
 };
-
-module.exports={Activity};
