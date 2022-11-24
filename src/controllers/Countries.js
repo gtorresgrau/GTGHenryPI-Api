@@ -1,5 +1,5 @@
-const { Country, Activity } =requiere( '../db.js');
-const { Op } =requiere( 'sequelize');
+const { Country, Activity } = require( '../db.js');
+const { Op } = require( 'sequelize');
 
 const countries = async(req, res)=>{
     let {name} = req.query;

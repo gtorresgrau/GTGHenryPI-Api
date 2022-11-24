@@ -1,5 +1,5 @@
-const { Country, Activity } =requiere ( '../db.js');
-const { Op } =requiere ( 'sequelize');
+const { Country, Activity } = require ( '../db.js');
+const { Op } = require ( 'sequelize');
 
 const getContinents = async (req, res) => {
     const { continent } = req.params;

@@ -1,5 +1,5 @@
-const { get } =requiere ( 'axios');
-const { Country, Activity } =requiere ( '../db.js');
+const { get } = require ( 'axios');
+const { Country, Activity } = require ( '../db.js');
 
 
 const getAllApi = async () => {
