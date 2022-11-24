@@ -1,7 +1,6 @@
 const { DataTypes } = require ('sequelize');
 
 export default (sequelize) => {
-
   sequelize.define('Activity', {
     name: {
       type: DataTypes.STRING,

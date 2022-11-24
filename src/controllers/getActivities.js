@@ -1,4 +1,4 @@
-const { Activity } = require( '../db.js');
+import { Activity } from '../db.js';
 
 
 const getActivities = async (req,res) => {

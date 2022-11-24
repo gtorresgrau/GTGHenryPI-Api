@@ -1,5 +1,5 @@
 const { get } = require ( 'axios');
-const { Country, Activity } = require ( '../db.js');
+import { Country, Activity } from '../db.js';
 
 
 const getAllApi = async () => {

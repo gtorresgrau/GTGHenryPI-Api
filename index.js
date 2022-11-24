@@ -17,7 +17,7 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
+const {server} = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const { getAllApi } = require('./src/controllers/GetAllApi.js').default
 const {PORT} = process.env;
