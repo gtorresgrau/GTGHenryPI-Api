@@ -24,9 +24,9 @@ const { PORT } = process.env;
 const dotenv = require('dotenv');
 dotenv.config()
 
-conn.sync({ force: false }).then(async () => {
+conn.sync({ force: true }).then(async () => {
   await getAllApi();
-  server.listen(PORT, () => {
+  server.losten(PORT, () => {
     console.log(`%s listening at ${PORT}`); 
   });
 });
