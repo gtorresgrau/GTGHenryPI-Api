@@ -27,4 +27,5 @@ router.get('/activities', getActivities);
 
 router.get(`${PATH}/:id`, getById);
 
-module.exports ={router};
+
+module.exports = router;

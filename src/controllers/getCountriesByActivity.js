@@ -23,4 +23,4 @@ const getCountriesByActivity = async (req, res) => {
         res.status(404).send(`Error al recibir la actividad:  ${filter}`)
     }
 }
-export default{ getCountriesByActivity };
+module.exports={ getCountriesByActivity };
