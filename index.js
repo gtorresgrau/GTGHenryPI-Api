@@ -19,7 +19,7 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const {server} = require('./src/app.js');
 const { conn } = require('./src/db.js');
-const { getAllApi } = require('./src/controllers/GetAllApi.js').default
+const { getAllApi } = require('./src/controllers/GetAllApi.js')
 const {PORT} = process.env;
 // Syncing all the models at once.
 
