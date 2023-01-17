@@ -20,12 +20,13 @@
 const {server} = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const { getAllApi } = require('./src/controllers/GetAllApi.js')
-const {PORT} = process.env;
-// Syncing all the models at once.
+const { PORT } = process.env;
+const dotenv = require('dotenv');
+dotenv.config()
 
-conn.sync({ force: true }).then(() => {
-  server.listen(PORT, async () => {
-    await getAllApi();
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+conn.sync({ force: false }).then(async () => {
+  await getAllApi();
+  server.listen(PORT, () => {
+    console.log(`%s listening at ${PORT}`); 
   });
 });
