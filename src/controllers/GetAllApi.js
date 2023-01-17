@@ -1,10 +1,10 @@
-const { get } = require ( 'axios');
+const axios = require ( 'axios');
 const { Country, Activity } = require ('../db.js');
 
 
 const getAllApi = async () => {
     try{            
-        const all = await get('https://restcountries.com/v3/all');
+        const all = await axios.get ('https://restcountries.com/v3/all');
         const countries = await all.data.map(el => {
             return{
                 id: el.cca3,
@@ -31,4 +31,4 @@ const getAllApi = async () => {
     }
 };
 
-module.exports={ getAllApi };
+module.exports = { getAllApi };
