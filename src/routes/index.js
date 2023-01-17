@@ -1,4 +1,5 @@
-const {Router}  = require( 'express');
+const { Router } = require('express');
+const router = Router();
 const {countries} = require( '../controllers/Countries.js');
 const {getContinents} = require( '../controllers/Continents.js');
 const {getById} = require( '../controllers/CountriesById.js');
@@ -10,22 +11,19 @@ const {getActivities} = require('../controllers/GetActivities');
 // Ejemplo: const authRouter = require('./auth.js');
 
 
-const router = Router();
-const PATH = '/countries';
-
 
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
-router.get(PATH, countries);
+router.get('/countries', countries);
 
-router.get(`${PATH}/continent/:continent`, getContinents);
+router.get(`/countries/continent/:continent`, getContinents);
 
 router.post('/activities', postActivity);
 
 router.get('/activities', getActivities);
 
-router.get(`${PATH}/:id`, getById);
+router.get(`/countries/:id`, getById);
 
 
 module.exports = router;
